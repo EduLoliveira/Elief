@@ -87,16 +87,16 @@
         justify-content: center;
         text-transform: uppercase;
         border-right: 3px solid $white;
-        & > .fa-circle-nodes{
-            position: absolute;
-            left: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: -2px;
-        }
         & > .fa-user {
             position: absolute;
             left: 10px;
+            font-weight: bold;
+            margin-top: -2px;
+        }
+        & > .fa-circle-nodes{
+            position: absolute;
+            left: 8px;
+            font-size: 20px;
             font-weight: bold;
             margin-top: -2px;
         }
@@ -107,6 +107,13 @@
             border: 2px solid;
             border-radius: 14px;
             padding: 5px;       
+        }
+        & > .fa-arrow-right-from-bracket{
+            position: absolute;
+            left: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: -2px;
         }
         & a {
             text-decoration: none;

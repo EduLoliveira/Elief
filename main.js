@@ -76,12 +76,10 @@ updateFixedElementPosition();
 
 const directory = './assets/images';
 const items = [
-    { filename: 'Notas_nilistas.jpg', book: 'Notas Nilis...', price: 69.90 },
+    { filename: 'Notas_Nilistas.jpg', book: 'Notas Nilis...', price: 69.90 },
     { filename: 'Ano_Zero.jpg', book: 'Ano Zero', price: 59.90 },
     { filename: 'Uma_Poesia_Pra_Cada_Dia.jpg', book: 'Uma poesia...', price: 69.90 },
     { filename: 'Mamae_Erotica.jpg', book: 'Mamãe erótica', price: 69.90 },
-    // { filename: 'img5.png', book: 'Livro E', price: 69.90 },
-    // { filename: 'img6.jpg', book: 'Livro F', price: 69.90 }
 ];
 
 items.forEach(({ filename, book, price }) => {

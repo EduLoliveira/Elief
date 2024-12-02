@@ -74,16 +74,16 @@
   text-transform: uppercase;
   border-right: 3px solid #fff;
 }
-.menu-bar--check ul > li > .fa-circle-nodes {
-  position: absolute;
-  left: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: -2px;
-}
 .menu-bar--check ul > li > .fa-user {
   position: absolute;
   left: 10px;
+  font-weight: bold;
+  margin-top: -2px;
+}
+.menu-bar--check ul > li > .fa-circle-nodes {
+  position: absolute;
+  left: 8px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: -2px;
 }
@@ -94,6 +94,13 @@
   border: 2px solid;
   border-radius: 14px;
   padding: 5px;
+}
+.menu-bar--check ul > li > .fa-arrow-right-from-bracket {
+  position: absolute;
+  left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2px;
 }
 .menu-bar--check ul > li a {
   text-decoration: none;
