@@ -76,20 +76,20 @@
 }
 .menu-bar--check ul > li > .fa-user {
   position: absolute;
-  left: 10px;
+  left: 4%;
   font-weight: bold;
   margin-top: -2px;
 }
 .menu-bar--check ul > li > .fa-circle-nodes {
   position: absolute;
-  left: 8px;
+  left: 2%;
   font-size: 20px;
   font-weight: bold;
   margin-top: -2px;
 }
 .menu-bar--check ul > li > .fa-phone-volume {
   position: absolute;
-  left: 4px;
+  left: 2%;
   margin-top: -10px;
   border: 2px solid;
   border-radius: 14px;
@@ -97,7 +97,7 @@
 }
 .menu-bar--check ul > li > .fa-arrow-right-from-bracket {
   position: absolute;
-  left: 8px;
+  left: 4%;
   font-size: 20px;
   font-weight: bold;
   margin-top: -2px;
