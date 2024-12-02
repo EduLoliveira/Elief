@@ -74,46 +74,67 @@ function updateFixedElementPosition() {
 // Atualizar a posição quando a página carregar
 updateFixedElementPosition();
 
-
-
-
-// // main_container
 const directory = './assets/images';
-const filenames = ['img.jpg', 'img1.jpg', 'img3.jpg', 'img4.jpg', 'img5.png', 'img6.jpg'];
+const items = [
+    { filename: 'Notas_nilistas.jpg', book: 'Notas Nilis...', price: 69.90 },
+    { filename: 'Ano_Zero.jpg', book: 'Ano Zero', price: 59.90 },
+    { filename: 'Uma_Poesia_Pra_Cada_Dia.jpg', book: 'Uma poesia...', price: 69.90 },
+    { filename: 'Mamae_Erotica.jpg', book: 'Mamãe erótica', price: 69.90 },
+    // { filename: 'img5.png', book: 'Livro E', price: 69.90 },
+    // { filename: 'img6.jpg', book: 'Livro F', price: 69.90 }
+];
 
-filenames.forEach((filename) => {
-    // Criação do div para a imagem
+items.forEach(({ filename, book, price }) => {
+    // Criação do elemento principal
     const div = document.createElement('div');
+    div.classList.add('main_container--div');
+
+    // Adicionando a imagem
     const img = document.createElement('img');
     img.src = `${directory}/${filename}`;
-    img.alt = filename;
+    img.alt = book;
     img.classList.add('main_container--div-img');
-    div.classList.add('main_container--div');
     div.appendChild(img);
 
     // Criação do div para informações
+    const infoDiv = document.createElement('div');
+    infoDiv.classList.add('main_container--div-information');
+
+    // Adicionando o nome do livro
     const p = document.createElement('p');
+    p.textContent = book;
+
+    // Texto adicional
     const small = document.createElement('small');
-    const span = document.createElement('span');
-    const ancora = document.createElement('a');
-    
-    p.textContent = 'livro';
     small.textContent = 'Por apenas';
-    span.textContent = 'R$69,90';
-    ancora.href = '#';
-    ancora.textContent = 'Saber Mais'
 
+    // Preço
+    const span = document.createElement('span');
+    span.textContent = `R$${price.toFixed(2)}`;
 
-    const filho_div = document.createElement('div');
-    filho_div.classList.add('main_container--div-information');
+    // Link de ação
+    const link = document.createElement('a');
+    link.href = '#';
+    link.textContent = 'Saber Mais';
 
-    // Agora adiciona os elementos corretamente
-    filho_div.appendChild(p);
-    filho_div.appendChild(small);
-    filho_div.appendChild(span); 
-    filho_div.appendChild(ancora);
+    // Adicionando elementos no div de informações
+    infoDiv.appendChild(p);
+    infoDiv.appendChild(small);
+    infoDiv.appendChild(span);
+    infoDiv.appendChild(link);
 
-    // Adicionando o div de informações dentro do div principal
-    div.appendChild(filho_div);
+    // Adicionando div de informações no div principal
+    div.appendChild(infoDiv);
+
+    // Adicionando evento de clique para exibir os detalhes no console
+    div.addEventListener('click', () => {
+        console.log({
+            filename,
+            book,
+            description: `O livro ${book} custa R$${price.toFixed(2)} e está localizado em ${directory}/${filename}.`
+        });
+    });
+
+    // Adicionando o div principal ao container
     main.appendChild(div);
 });
