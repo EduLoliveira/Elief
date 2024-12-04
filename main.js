@@ -1,4 +1,3 @@
-
 // Efeito de Click para exibir Menu com opções
 const menuNav = document.querySelector('.header_span--input');
 const menuNavbar = document.querySelector('.menu-bar--check');
@@ -46,6 +45,8 @@ const section = document.querySelector('.section');
 const sec = document.querySelector('.section_container');
 const main = document.querySelector('.main_container');
 
+
+// Atualizar a posição quando a página carregar
 let hasExecuted = false; // Variável de controle
 function updateFixedElementPosition() {
     if (hasExecuted)
@@ -70,69 +71,82 @@ function updateFixedElementPosition() {
 
     hasExecuted = true; 
 }
-
-// Atualizar a posição quando a página carregar
 updateFixedElementPosition();
 
 const directory = './assets/images';
 const items = [
-    { filename: 'Notas_Nilistas.jpg', book: 'Notas Nilis...', price: 69.90 },
-    { filename: 'Ano_Zero.jpg', book: 'Ano Zero', price: 59.90 },
-    { filename: 'Uma_Poesia_Pra_Cada_Dia.jpg', book: 'Uma poesia...', price: 69.90 },
-    { filename: 'Mamae_Erotica.jpg', book: 'Mamãe erótica', price: 69.90 },
+    { filename: 'Notas_Nilistas.jpg', book: 'Notas Nilis...', fullNameBook:'Notas Nilistas', price: 69.90, information: 'Uma obra sobre lorem ipson lorem ipson lorel ipson lorem ipson...' },
+    { filename: 'Ano_Zero.jpg', book: 'Ano Zero', price: 59.90, fullNameBook:'Ano Zero', information: 'A narrativa de um mundo lorem ipson lorem ipson lorel ipson lorem ipson...' },
+    { filename: 'Uma_Poesia_Pra_Cada_Dia.jpg', book: 'Uma poesia...', fullNameBook:'Uma Poesia Pra Cada Dia', price: 69.90, information: 'Uma coleção inspiradora lorem ipson lorem ipson lorel ipson lorem ipson...' },
+    { filename: 'Mamae_Erotica.jpg', book: 'Mamãe eró...', fullNameBook:'Mamãe Erótica', price: 69.90, information: 'Um conto sensual e lorem ipson lorem ipson lorel ipson lorem ipson...' },
 ];
 
-items.forEach(({ filename, book, price }) => {
-    // Criação do elemento principal
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-img');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+const modalClose = document.querySelector('.modal-content-close');
+
+// Função para abrir o modal
+const openModal = (item) => {
+    modalImg.src = `${directory}/${item.filename}`;
+    modalImg.alt = item.fullNameBook;
+    modalTitle.textContent = item.fullNameBook;
+    modalDescription.textContent = item.information;
+
+    modal.classList.remove('hidden');
+    modal.classList.add('visible');
+};
+
+// Fechar o modal
+modalClose.addEventListener('click', () => {
+    modal.classList.remove('visible');
+    modal.classList.add('hidden');
+});
+
+// Criar os livros dinamicamente
+items.forEach(({ filename, book, fullNameBook, price, information }) => {
     const div = document.createElement('div');
     div.classList.add('main_container--div');
 
-    // Adicionando a imagem
     const img = document.createElement('img');
     img.src = `${directory}/${filename}`;
-    img.alt = book;
+    img.alt = fullNameBook;
     img.classList.add('main_container--div-img');
     div.appendChild(img);
 
-    // Criação do div para informações
     const infoDiv = document.createElement('div');
     infoDiv.classList.add('main_container--div-information');
 
-    // Adicionando o nome do livro
     const p = document.createElement('p');
     p.textContent = book;
 
-    // Texto adicional
     const small = document.createElement('small');
     small.textContent = 'Por apenas';
 
-    // Preço
     const span = document.createElement('span');
     span.textContent = `R$${price.toFixed(2)}`;
 
-    // Link de ação
     const link = document.createElement('a');
     link.href = '#';
     link.textContent = 'Saber Mais';
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        openModal({ filename, fullNameBook, information });
+    });
 
-    // Adicionando elementos no div de informações
     infoDiv.appendChild(p);
     infoDiv.appendChild(small);
     infoDiv.appendChild(span);
     infoDiv.appendChild(link);
 
-    // Adicionando div de informações no div principal
     div.appendChild(infoDiv);
 
-    // Adicionando evento de clique para exibir os detalhes no console
+    // Adiciona evento de clique para abrir o modal
     div.addEventListener('click', () => {
-        console.log({
-            filename,
-            book,
-            description: `O livro ${book} custa R$${price.toFixed(2)} e está localizado em ${directory}/${filename}.`
-        });
+        openModal({ filename, fullNameBook, information });
     });
 
-    // Adicionando o div principal ao container
+    // Adiciona o div principal ao container
     main.appendChild(div);
 });
