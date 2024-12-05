@@ -260,6 +260,21 @@
     }
 }
 
+.container_icon--whatsapp {
+    font-size: 36px;
+    position: fixed;
+    bottom: 1%;
+    left: 4%;
+    background-color: green;
+    border-radius: 100%;
+    text-align: center;
+    width: 38px;
+    height: auto;
+    & > a {
+        text-decoration: none;
+        color: $white;
+    }
+}
 
 
 /* Classes de visibilidade */
@@ -292,6 +307,7 @@
 
 /* Conteúdo do modal */
 .modal-content {
+    overflow-y: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 70px 1fr 0.4fr 1fr;
@@ -312,6 +328,7 @@
         right: 13%;    
         font-size: 38px;
         cursor: pointer;
+        border-radius: 5px ;
         color: $white;
         background-color: $black;
     }
@@ -339,14 +356,39 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+        }
         &-details {
-            grid-column: 1 / 5 ;
+            margin-bottom: 10%;
+            text-align: justify;
+            line-height: 1.6;
+            }
+    & > a {
+        background-color: $white;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 8px 2rem;
+        border: 1px solid $btnBorderSaberMais;
+        & > span {
+            font-size: 16px;
+            color: $btnSaberMais;
+            text-transform: uppercase;
+            }
+        }
+    & > a:hover {
+        background-color: $btnBorderSaberMais;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 8px 2rem;
+        border: 1px solid $black;
+        transition: 0.2s all ease-out;
+        & > span {
+            font-size: 16px;
+            color: $white;
+            text-transform: uppercase;
             }
         }
     }
 }
-
-
 
 
 // ╔╔══════════════════════╗╗
@@ -432,12 +474,18 @@
 }
 
 @media (min-width: 580px) {
+
     .section_container {
         width: 100%;
     }
 }
 
 @media (min-width: 660px){
+
+    .header{
+        width: 100%;
+    }
+
     .menu-filtered {
         right: 20%;
     }
@@ -449,6 +497,10 @@
 
 
 @media (min-width: 775px){
+
+    .header{
+        width: 100%;
+    }
 
     .menu-filtered {
         right: 21%;
@@ -582,6 +634,10 @@
     .main_container--div {
         width: 140px;
         margin-left: -4%;
+    }
+
+    .modal-content-informs {
+        margin-top: 10%;
     }
 }
 
@@ -832,15 +888,113 @@
     }
 }
 
-@media (min-width: 371px){ 
+@media (min-width: 371px) and (max-width: 439px){ 
 
     .modal-content {
         width: 290px;
         &-close {
-            right: 15%;    
+            right: 15%; 
+            top: 19%;   
         }
         &-informs {
             margin-top: 10%;
+        }
+    }
+}
+
+@media (min-width: 440px) {
+
+    .modal-content {
+        &-close {
+            right: 18%; 
+            top: 21%;   
+        }
+    }
+}
+
+
+@media (min-width: 510px) and (max-width: 590px) {
+
+    .modal-content {
+        &-close {
+            right: 23%; 
+        }
+    }
+
+    .container_icon--whatsapp {
+        font-size: 38px;
+        width: 40px;
+        bottom: 2%;
+        left: 2%;
+    }
+}
+
+@media (min-width: 591px) {
+
+    .modal-content {
+        &-close {
+            right: 23%; 
+        }
+    }
+}
+
+@media (min-width: 620px) {
+    
+    .modal-content {
+        &-close {
+            right: 28%; 
+        }
+    }
+}
+
+@media (min-width: 739px) {
+    .modal-content {
+        &-close {
+            right: 30%; 
+        }
+    }
+}
+
+
+@media (min-width: 789px) {
+    .modal-content {
+        &-close {
+            right: 33%; 
+        }
+    }
+}
+
+
+
+@media (min-width: 899px) {
+    .modal-content {
+        &-close {
+            right: 35%; 
+        }
+    }
+
+    
+    .container_icon--whatsapp {
+        font-size: 54px;
+        bottom: 2%;
+        width: 56px;
+    }
+}
+
+
+@media (min-width: 1064px) {
+
+    .modal-content {
+        &-close {
+            right: 37%; 
+        }
+    }
+}
+
+@media (min-width: 1324px) {
+    .modal-content {
+        &-close {
+            right: 40%; 
         }
     }
 }

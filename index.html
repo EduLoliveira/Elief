@@ -22,8 +22,8 @@
                     <h1>menu</h1>
                     <ul>
                         <li><i class="fa-regular fa-user"></i><a href="">sobre mim</a></li>
-                        <li><i class="fa-solid fa-circle-nodes"></i><a href="">comunidade</a></li>
-                        <li><i class="fa-solid fa-phone-volume"></i><a href="">contato</a></li>
+                        <li><i class="fa-solid fa-circle-nodes"></i><a href="">comunidade</li></a>
+                        <li><i class="fa-solid fa-phone-volume"></i><a href="" id="btn-contato">contato</a></li>
                         <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="">sair</a></li>
                     </ul>
                 </div>
@@ -64,8 +64,13 @@
             </div>
         </section>    
         <main class="main_container">
-
+            
         </main>
+        <span class="container_icon--whatsapp" id="container_whatsapp-btn">
+        <a href="" id="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        </span>
         <div id="modal" class="modal hidden">
             <div class="modal-content">
                 <span class="modal-content-close">&times;</span>
@@ -74,6 +79,10 @@
                     <h2 id="modal-title" class="modal-content-informs-title"></h2>
                     <br>
                     <p id="modal-description"  class="modal-content-informs-details"></p>
+                    <br>
+                    <a id="modal-btn" class="modal-content-informs-btn"><span>Finalizar Pedido</span></a>
+                    <br>
+                    <br>
                 </div>
             </div>
         </div>
