@@ -366,7 +366,7 @@
     padding: 0.6rem 1.4rem;
   }
   .section_container--span-filter {
-    margin-top: 5.5%;
+    margin-top: 3.8%;
     margin-left: -5%;
   }
   .section_container--span-filter-view {
@@ -511,7 +511,7 @@
     margin-top: 2.5%;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .main_container {
     gap: 20px;
   }
@@ -526,7 +526,10 @@
     margin-top: 10%;
   }
 }
-@media (min-width: 371px) and (max-width: 419px) {
+@media (min-width: 376px) and (max-width: 419px) {
+  .main_container {
+    gap: 35px;
+  }
   .main_container--div {
     max-width: 146px;
   }
