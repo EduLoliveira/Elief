@@ -877,7 +877,7 @@
 //
 //
 
-@media (max-width: 370px){
+@media (max-width: 375px){
     
     .modal-content {
         width: 85%;
@@ -892,7 +892,7 @@
     }
 }
 
-@media (min-width: 371px) and (max-width: 439px){ 
+@media (min-width: 376px) and (max-width: 439px){ 
 
     .modal-content {
         width: 290px;
@@ -947,7 +947,6 @@
     .modal-content {
         &-close {
             right: 24%;
-            top: 15%;
         }
     }
 }

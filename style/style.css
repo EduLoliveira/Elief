@@ -691,7 +691,7 @@
     margin-top: 6%;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .modal-content {
     width: 85%;
     height: 70%;
@@ -704,7 +704,7 @@
     font-weight: bold;
   }
 }
-@media (min-width: 371px) and (max-width: 439px) {
+@media (min-width: 376px) and (max-width: 439px) {
   .modal-content {
     width: 290px;
   }
@@ -741,7 +741,6 @@
 @media (min-width: 620px) {
   .modal-content-close {
     right: 24%;
-    top: 15%;
   }
 }
 @media (min-width: 690px) {
