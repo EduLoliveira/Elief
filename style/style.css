@@ -384,7 +384,7 @@
     height: 100%;
   }
   .section_container--span-filter {
-    margin-top: 4%;
+    margin-top: 3.6%;
     margin-left: -5%;
   }
   .section_container--span-filter-view {
@@ -713,7 +713,7 @@
   }
   .modal-content-close {
     right: 15%;
-    top: 23%;
+    top: 19%;
   }
   .modal-content-informs {
     margin-top: 10%;
@@ -722,7 +722,7 @@
 @media (min-width: 440px) {
   .modal-content-close {
     right: 18%;
-    top: 23%;
+    top: 22%;
   }
 }
 @media (min-width: 510px) and (max-width: 590px) {
