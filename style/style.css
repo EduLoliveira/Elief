@@ -698,6 +698,7 @@
   }
   .modal-content-close {
     right: 10%;
+    top: 15%;
   }
   .modal-content-informs {
     font-weight: bold;
@@ -709,7 +710,7 @@
   }
   .modal-content-close {
     right: 15%;
-    top: 19%;
+    top: 23%;
   }
   .modal-content-informs {
     margin-top: 10%;
@@ -718,7 +719,7 @@
 @media (min-width: 440px) {
   .modal-content-close {
     right: 18%;
-    top: 21%;
+    top: 23%;
   }
 }
 @media (min-width: 510px) and (max-width: 590px) {
@@ -735,7 +736,6 @@
 @media (min-width: 591px) {
   .modal-content-close {
     right: 23%;
-    top: 13%;
   }
 }
 @media (min-width: 620px) {
@@ -747,7 +747,6 @@
 @media (min-width: 690px) {
   .modal-content-close {
     right: 26%;
-    top: 21%;
   }
 }
 @media (min-width: 739px) {
@@ -768,7 +767,6 @@
 }
 @media (min-width: 899px) {
   .modal-content-close {
-    top: 25%;
     right: 34%;
   }
   .container_icon--whatsapp {

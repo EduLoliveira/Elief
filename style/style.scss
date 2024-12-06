@@ -883,7 +883,8 @@
         width: 85%;
         height: 70%;
         &-close {
-            right: 10%;    
+            right: 10%;  
+            top: 15%;  
         }
         &-informs {
             font-weight: bold;
@@ -897,7 +898,7 @@
         width: 290px;
         &-close {
             right: 15%; 
-            top: 19%;   
+            top: 23%;   
         }
         &-informs {
             margin-top: 10%;
@@ -910,7 +911,7 @@
     .modal-content {
         &-close {
             right: 18%; 
-            top: 21%;   
+            top: 23%;   
         }
     }
 }
@@ -937,7 +938,6 @@
     .modal-content {
         &-close {
             right: 23%; 
-            top: 13%;
         }
     }
 }
@@ -957,7 +957,6 @@
     .modal-content {
         &-close {
             right: 26%;
-            top: 21%;
         }
     }
 }
@@ -992,7 +991,6 @@
 @media (min-width: 899px) {
     .modal-content {
         &-close {
-            top: 25%;
             right: 34%;
         }
     }

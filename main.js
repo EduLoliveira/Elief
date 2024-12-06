@@ -99,7 +99,7 @@ document.addEventListener('click', (event) => {
 const btnContato = document.querySelector('#btn-contato');
 btnContato.addEventListener('click', () => {
     btnContato.href = 'https://w.app/2hepwu';
-})
+})  
 
 // Efeito de Click para exibir option de filter
 const buttonFilter = document.querySelector('#checked');
@@ -136,6 +136,7 @@ const openModal = (item) => {
     modal.classList.add('visible');
     main.classList.add('modal-open');
 };
+
 
 // Fechar o modal
 modalClose.addEventListener('click', () => {
