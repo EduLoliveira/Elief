@@ -10,7 +10,6 @@ const section = document.querySelector('.section');
 const sec = document.querySelector('.section_container');
 const main = document.querySelector('.main_container');
 
-
 const directory = './assets/images';
 const items = [
     { 
@@ -94,13 +93,13 @@ document.addEventListener('click', (event) => {
     } 
 });
 
+
+
 //Função de Click, opção(s) menu
 const btnContato = document.querySelector('#btn-contato');
 btnContato.addEventListener('click', () => {
     btnContato.href = 'https://w.app/2hepwu';
 })
-
-
 
 // Efeito de Click para exibir option de filter
 const buttonFilter = document.querySelector('#checked');
@@ -135,12 +134,14 @@ const openModal = (item) => {
 
     modal.classList.remove('hidden');
     modal.classList.add('visible');
+    main.classList.add('modal-open');
 };
 
 // Fechar o modal
 modalClose.addEventListener('click', () => {
     modal.classList.remove('visible');
     modal.classList.add('hidden');
+    main.classList.remove('modal-open');
 });
 
 

@@ -171,6 +171,12 @@
   line-height: 1.6;
 }
 
+.main_container.modal-open {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
 .main_container {
   position: absolute;
   z-index: -999;
@@ -278,7 +284,6 @@
   overflow-y: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 70px 1fr 0.4fr 1fr;
   background: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -290,7 +295,6 @@
 }
 .modal-content-close { /* Botão de fechar do modal */
   position: absolute;
-  grid-row: 1;
   grid-column: 4;
   top: 17%;
   padding: 2px 10px;
@@ -302,7 +306,6 @@
   background-color: #000;
 }
 .modal-content > img {
-  grid-row: 2/4;
   grid-column: 2/4;
   width: 100%;
   height: 240px;
@@ -313,7 +316,6 @@
   margin-top: 15%;
   text-align: center;
   grid-column: 1/5;
-  grid-row: 4;
   font-weight: bold;
 }
 .modal-content-informs-title {
@@ -733,26 +735,41 @@
 @media (min-width: 591px) {
   .modal-content-close {
     right: 23%;
+    top: 13%;
   }
 }
 @media (min-width: 620px) {
   .modal-content-close {
-    right: 28%;
+    right: 24%;
+    top: 15%;
+  }
+}
+@media (min-width: 690px) {
+  .modal-content-close {
+    right: 26%;
+    top: 21%;
   }
 }
 @media (min-width: 739px) {
   .modal-content-close {
-    right: 30%;
+    right: 28%;
   }
 }
 @media (min-width: 789px) {
   .modal-content-close {
-    right: 33%;
+    right: 30%;
+    top: 23%;
+  }
+}
+@media (min-width: 869px) {
+  .modal-content-close {
+    right: 32%;
   }
 }
 @media (min-width: 899px) {
   .modal-content-close {
-    right: 35%;
+    top: 25%;
+    right: 34%;
   }
   .container_icon--whatsapp {
     font-size: 54px;
@@ -762,11 +779,11 @@
 }
 @media (min-width: 1064px) {
   .modal-content-close {
-    right: 37%;
+    right: 35%;
   }
 }
 @media (min-width: 1324px) {
   .modal-content-close {
-    right: 40%;
+    right: 38%;
   }
 }/*# sourceMappingURL=style.css.map */
