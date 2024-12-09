@@ -467,6 +467,10 @@
 
 @media (min-width: 550px){
 
+    .header {
+        width: 98%;
+    }
+
     .menu-filtered {
         right: 17%;
     }
@@ -625,9 +629,9 @@
 //
 //  FILTER E LIVROS DISPONIVEIS
 
-@media (max-width: 375px){
+@media (max-width: 374px){
     .main_container {
-        gap: 20px;
+        gap: 5% 10%;
     }
 
     .main_container--div-information > p {
@@ -647,7 +651,7 @@
 @media (min-width: 376px) and (max-width: 419px){
 
     .main_container {
-        gap: 35px;
+        gap: 5% 15%;
     }
 
     .main_container--div {
@@ -662,9 +666,10 @@
 
 @media (min-width: 420px){
     
-    .main_container{
-        gap: 40px;
+    .main_container {
+        gap: 5% 15%;
     }
+
 
     .main_container--div {
         margin-left: 5%;
@@ -693,6 +698,7 @@
 
     .main_container {
         grid-auto-rows: 42%;
+        gap: 2% 0%;
     }
 
     .main_container--div {
@@ -726,6 +732,7 @@
     
     .main_container {
         grid-auto-rows: 380px;
+        gap: 2% 0%;
     }
 
     .main_container--div {
@@ -762,6 +769,10 @@
 
 @media (min-width: 620px) {
     
+    .main_container {
+        gap: 6% 2%;
+    }
+
     .main_container--div {
         margin-left: 10%;
     }
