@@ -205,8 +205,7 @@
 
 .main_container.modal-open {
     position: fixed;
-    height:100%;
-     overflow:hidden;
+    overflow:hidden;
 }
 
 .main_container {
@@ -631,7 +630,7 @@
 
 @media (max-width: 374px){
     .main_container {
-        gap: 5% 10%;
+        gap: 5% 8%;
     }
 
     .main_container--div-information > p {
@@ -650,8 +649,9 @@
 
 @media (min-width: 376px) and (max-width: 419px){
 
+    
     .main_container {
-        gap: 5% 15%;
+        gap: 6% 15%;
     }
 
     .main_container--div {
@@ -667,7 +667,7 @@
 @media (min-width: 420px){
     
     .main_container {
-        gap: 5% 15%;
+        gap: 6% 10%;
     }
 
 

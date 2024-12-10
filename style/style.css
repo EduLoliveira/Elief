@@ -173,7 +173,6 @@
 
 .main_container.modal-open {
   position: fixed;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -516,7 +515,7 @@
 }
 @media (max-width: 374px) {
   .main_container {
-    gap: 5% 10%;
+    gap: 5% 8%;
   }
   .main_container--div-information > p {
     font-size: 12px;
@@ -531,7 +530,7 @@
 }
 @media (min-width: 376px) and (max-width: 419px) {
   .main_container {
-    gap: 5% 15%;
+    gap: 6% 15%;
   }
   .main_container--div {
     max-width: 146px;
@@ -542,7 +541,7 @@
 }
 @media (min-width: 420px) {
   .main_container {
-    gap: 5% 15%;
+    gap: 6% 10%;
   }
   .main_container--div {
     margin-left: 5%;
