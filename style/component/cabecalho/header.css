@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #7E543A;
+  padding: 15px 10px;
+  position: fixed;
+  z-index: 999;
+  width: 96%;
+}
+.header_span--input {
+  visibility: hidden;
+}
+.header_span--input-menu {
+  margin-left: -30px;
+  color: white;
+  font-size: 24px;
+  background-color: #714A32;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 0.5rem;
+}
+
+.header_span > i {
+  padding: 0.5rem;
+  background-color: #714A32;
+  font-size: 22px;
+  color: white;
+  margin-right: -10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.header_div {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.menu-bar--check {
+  position: absolute;
+  background-color: #fff;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: -100%;
+  border-radius: 0 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  z-index: 990;
+  transition: all 0.5s;
+}
+.menu-bar--check > h1 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.menu-bar--check ul > li {
+  margin-top: 1.1rem;
+  padding-top: 20px;
+  text-align: center;
+  height: 25px;
+  background-color: #DBDBDB;
+  justify-content: center;
+  text-transform: uppercase;
+  border-right: 3px solid #fff;
+}
+.menu-bar--check ul > li > .fa-user {
+  position: absolute;
+  left: 4%;
+  font-weight: bold;
+  margin-top: -2px;
+}
+.menu-bar--check ul > li > .fa-circle-nodes {
+  position: absolute;
+  left: 2%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2px;
+}
+.menu-bar--check ul > li > .fa-phone-volume {
+  position: absolute;
+  left: 2%;
+  margin-top: -10px;
+  border: 2px solid;
+  border-radius: 14px;
+  padding: 5px;
+}
+.menu-bar--check ul > li > .fa-arrow-right-from-bracket {
+  position: absolute;
+  left: 4%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2px;
+}
+.menu-bar--check ul > li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}/*# sourceMappingURL=header.css.map */

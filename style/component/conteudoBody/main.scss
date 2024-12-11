@@ -1,0 +1,62 @@
+@import '../abstract/variaveis.scss';
+// style header
+//  BTNS e cabecalho
+
+// CONTEUDO MAIN ONDE O CONTEUDO PRINCIPAL DA PAGINA SERA EXIBIDA 
+.main_container {
+    position: absolute;
+    z-index: -999;
+    padding: 10% 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: $backgroundContainerMain;
+    border-radius: 15px;
+    height: auto;
+    text-align: center;
+    grid-auto-rows: 300px;
+    width: 90%;
+    gap: 35px;
+    &--div {
+        background-color: $backgroundContainerBook;
+        &-img {
+            padding-top: 10%;
+            width: 70%;
+            height: 50%;
+        }
+        &-information {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            justify-content: center;
+            align-items: center;
+            & > p {
+                padding-top: 0.4rem;
+                letter-spacing: 1.3px;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            & > small {
+                padding-bottom: 0.2rem;
+                margin-top: 0.4rem;
+                font-size: 12px;            
+            }
+            & > span {
+                font-size: 16px;
+                color: $btnValueColor;
+                font-weight: bold;
+                letter-spacing: 2.5px;
+                margin-bottom: 10%;
+            }
+            & > a {
+                margin-top: 2%;
+                padding: 0.3rem 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $btnSaberMais;
+                border: 1px solid $btnBorderSaberMais;
+                background-color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

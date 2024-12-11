@@ -1,0 +1,71 @@
+@import '../abstract/variaveis.scss';
+// style bTN filtro 'filter' e Selecione 'Selected' 
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background: $white;
+    &_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        background-color: $backgroundContainerSelect;
+        width: 96%;
+        padding: 1.2rem;
+        &--span{
+            text-align: center;
+            background-color: $backgroundSelect;
+            height: 100%;
+            &-filter{
+                visibility: hidden;
+                margin-top: 4.8%;
+                &-view{
+                    background: $backgroundBtnSelect;
+                    padding: 0.4rem 2rem;
+                    border-radius: 5px;
+                    font-weight: bold;
+
+                }
+            }
+        }
+        &--h3 {
+            color: $white;
+            background-color: $brown;
+            padding: 0.6rem 3.2rem;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+// █▄████─█▄████─█▄████
+// ▀▀─▄█▀─▀▀─▄█▀─▀▀─▄█▀
+// ──▄██────▄██────▄██
+// ─▄██▀───▄██▀───▄██▀
+// ─███────███────███
+.menu-filtered {
+    position: absolute;
+    z-index: -1;
+    top: -100%;
+    right: 23.5%;
+    transition: all .5s ease-out;
+}
+
+
+.section{
+    &_div {
+        display: block;
+        font-size: 26px;
+        margin-top: 1rem;
+        text-align: center;
+        color: $black;
+        font-weight: bold;
+        &--span {
+            line-height: 1.6;
+        }
+    }
+}
+

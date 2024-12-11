@@ -1,0 +1,110 @@
+@import '../abstract/variaveis.scss';
+
+/* Classes de visibilidade */
+.modal.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $backgroundModalActive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 340px;
+    height: 480px;
+    min-height: 300px;
+    border-radius: 1rem ;
+    &-close {/* Botão de fechar do modal */
+        position: absolute;
+        grid-column: 4;
+        top: 17%;
+        padding: 2px 10px;
+        right: 13%;    
+        font-size: 38px;
+        cursor: pointer;
+        border-radius: 5px ;
+        color: $white;
+        background-color: $black;
+    }
+    & > img {
+        grid-column: 2 / 4;
+        width: 100%;
+        height: 240px;
+        max-width: 200px;
+    }
+}
+
+.modal-content {
+    &-informs {
+        margin-top: 15%;
+        text-align: center;
+        grid-column: 1 / 5;
+        font-weight: bold;
+        &-title {
+            line-height: 1.5;
+            border-bottom: 1.1px solid $black;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        &-details {
+            margin-bottom: 10%;
+            text-align: justify;
+            line-height: 1.6;
+            }
+    & > a {
+        background-color: $white;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 8px 2rem;
+        border: 1px solid $btnBorderSaberMais;
+        & > span {
+            font-size: 16px;
+            color: $btnSaberMais;
+            text-transform: uppercase;
+            }
+        }
+    & > a:hover {
+        background-color: $btnBorderSaberMais;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 8px 2rem;
+        border: 1px solid $black;
+        transition: 0.2s all ease-out;
+        & > span {
+            font-size: 16px;
+            color: $white;
+            text-transform: uppercase;
+            }
+        }
+    }
+}
