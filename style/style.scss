@@ -5,61 +5,28 @@
     font-family: $font;
     background-color: $backgroundBody;
 }
+
 // ----------------------------------------------
 // (҂⌣̀_⌣́)ᕤ
 @import '../style/component/cabecalho/header.scss';
 @import '../style/component/cabecalho/section.scss';
 
 
-
-// ──▒▒▒▒▒────▄████▄─────
-// ─▒─▄▒─▄▒──███▄█▀──────
-// ─▒▒▒▒▒▒▒─▐████──█──█──
-// ─▒▒▒▒▒▒▒──█████▄──────
-// ─▒─▒─▒─▒───▀████▀─────
-@import '../style/component/conteudoBody/main.scss';
-@import '../style/component/conteudoBodyModal/modal.scss';
-// ----------------------------
-
-.container_icon--whatsapp {
-    font-size: 32px;
-    position: fixed;
-    bottom: 1%;
-    left: 4%;
-    background-color: green;
-    border-radius: 100%;
-    text-align: center;
-    width: 38px;
-    height: auto;
-    & > a {
-        text-decoration: none;
-        color: $white;
-    }
-}
-
-.main_container.modal-open {
-    position: fixed;
-    overflow: hidden;
-}
-
-
-
-
-// ╔╔══════════════════════╗╗
-// ║║▐█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▌║║
-// ║║▐▌░░▒▒░░▒▒░░▒▒░░▒▒░░▐▌║║
-// ║║▐▌▒▒░░▒▒░░▒▒░░▒▒░░▒▒▐▌║║
-// ║║▐▌▒▒░░▒▒░░▒▒░░▒▒░░▒▒▐▌║║       ALINHAMENTO DE MEDIA QUERIES 
-// ║║▐▌░░▒▒░░▒▒░░▒▒░░▒▒░░▐▌║║
-// ║║▐▌▒▒░░▒▒░░▒▒░░▒▒░░▒▒▐▌║║               POSITION FIXED
-// ║║▐▌░░▒▒░░▒▒░░▒▒░░▒▒░░▐▌║║              HEADER & SECTION
-// ║║▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▌║║           
-// ╚╚══════════════════════╝╝        FILTER E LIVROS DISPONIVEIS
-// ██▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄██
-// ██▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄██
-// ██▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄██
-// ██▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀██
-// ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+// 
+// 
+// 
+// 
+//        ALINHAMENTO DE MEDIA QUERIES 
+// 
+//                POSITION FIXED
+//               HEADER & SECTION
+//            
+//         FILTER E LIVROS DISPONIVEIS
+// 
+// 
+// 
+// 
+// 
 
 @media (max-width: 409px){
     .menu-filtered {
@@ -272,7 +239,17 @@
     }
 }
 
+
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ──▒▒▒▒▒────▄████▄─────
+// ─▒─▄▒─▄▒──███▄█▀──────
+// ─▒▒▒▒▒▒▒─▐████──█──█──
+// ─▒▒▒▒▒▒▒──█████▄──────
+// ─▒─▒─▒─▒───▀████▀─────
+@import '../style/component/conteudoBody/main.scss';
+
+
 //  ALINHAMENTO DE MEDIA QUERIES 
 //
 //        MAIN_CONTAINER 
@@ -605,13 +582,17 @@
 }
 
 
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ╥﹏╥
+@import '../style/component/conteudoBodyModal/modal.scss';
+@import '../style/component/conteudoModal/aboutMe.scss';
+
 //  ALINHAMENTO DE MEDIA QUERIES 
 //
 //        MODAL LIVROS
 //              & 
 //      MODAL SOBRE MIM
-//
 //
 
 @media (max-width: 375px){
@@ -754,6 +735,33 @@
         }
     }
 }
+
+
+
+//------------------------------------------------------------------------
+
+
+.container_icon--whatsapp {
+    font-size: 32px;
+    position: fixed;
+    bottom: 1%;
+    left: 4%;
+    background-color: green;
+    border-radius: 100%;
+    text-align: center;
+    width: 38px;
+    height: auto;
+    & > a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.main_container.modal-open {
+    position: fixed;
+    overflow: hidden;
+}
+
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @media (min-width: 620px) {

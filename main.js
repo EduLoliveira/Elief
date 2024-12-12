@@ -99,6 +99,46 @@ const btnContato = document.querySelector('#btn-contato');
 btnContato.addEventListener('click', () => {
     btnContato.href = 'https://w.app/2hepwu';
 })
+const openAbout = () => {
+    // Seleção do container principal
+    const divContainer = document.querySelector('.containerAbout');
+
+    // Criação dos elementos
+    const container = document.createElement('div');
+    container.classList.add('containerAbout-div');
+
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('containerAbout--img');
+
+    const imgModal = document.createElement('img');
+    imgModal.src = `./assets/e-book.png`;
+    imgModal.alt = 'Sobre mim';
+
+    const imgDescription = document.createElement('p');
+    imgDescription.textContent = 
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
+        'Nullam scelerisque mauris id ornare placerat.';
+
+    const closeImg = document.createElement('button');
+    closeImg.textContent = 'Fechar';
+    closeImg.classList.add('modal-close-btn');
+    main.classList.add('modal-open')
+    // Montagem do conteúdo no modal
+    imgContainer.appendChild(imgModal);
+    imgContainer.appendChild(imgDescription);
+    imgContainer.appendChild(closeImg); // Botão agora dentro do imgContainer
+    container.appendChild(imgContainer);
+
+    // Adiciona o modal à página
+    divContainer.appendChild(container);
+
+    // Evento para fechar o modal
+    closeImg.addEventListener('click', () => {
+        container.remove();
+        main.classList.remove('modal-open')
+    });
+};
+
 
 
 
@@ -122,6 +162,7 @@ buttonFilter.addEventListener ('click',() => {
         console.log('inicio')
     }
 })
+
 
 
 

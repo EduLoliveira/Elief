@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* Estilos para o container do modal */
+.containerAbout-div {
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+  background: white;
+}
+
+.containerAbout--img {
+  position: fixed;
+  top: 50%;
+  z-index: 999;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+.containerAbout--img > img {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* Classe para evitar o scroll quando o modal está aberto */
+.modal-open {
+  overflow: hidden;
+}
+
+/* Estilos para o botão de fechar do modal */
+.modal-close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Efeito de hover para o botão de fechar */
+.modal-close-btn:hover {
+  background-color: #d32f2f;
+}/*# sourceMappingURL=aboutMe.css.map */
