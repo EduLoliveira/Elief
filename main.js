@@ -49,9 +49,14 @@ const items = [
 ]
 
 
+
+
+
+
 // Condição para calcular a posição os elementos filhos de elementos com position fixed
 // Atualizar a posição quando a página carregar
-let hasExecuted = false; // Variável de controle
+
+let hasExecuted = false;  // Variável de controle
 function updateFixedElementPosition() {
     if (hasExecuted)
          return; 
@@ -75,6 +80,13 @@ function updateFixedElementPosition() {
     hasExecuted = true; 
 }
 updateFixedElementPosition();
+// POSICIONAMENTO DOS ELEMENTOS & CALCULO HEADER E SECTION "livros disponiveis"
+    
+
+
+
+
+
 
 
 
@@ -91,24 +103,50 @@ menuNav.addEventListener('click', () => {
 document.addEventListener('click', (event) => { 
     if (!menuNavbar.contains(event.target) && event.target !== menuNav) { 
         menuNavbar.style.left = '-100%'; 
+        menuNav.checked = false;
     } 
 });
+// ANIMAÇÂO E INTERAÇÂO DO MENU NAV
+
+
+
+
+
+
+
+
+
+
+
 
 //Função de Click, opção(s) menu
 const btnContato = document.querySelector('#btn-contato');
 btnContato.addEventListener('click', () => {
     btnContato.href = 'https://w.app/2hepwu';
 })
+// BOTAO CONTATO INTERATIVO NO MENU NAV
+
+
+
+
+
+
+
+
+
+
+
+// SOBRE MIM
 const openAbout = () => {
     // Seleção do container principal
     const divContainer = document.querySelector('.containerAbout');
 
     // Criação dos elementos
     const container = document.createElement('div');
-    container.classList.add('containerAbout-div');
+    container.classList.add('containerAbout_div');
 
     const imgContainer = document.createElement('div');
-    imgContainer.classList.add('containerAbout--img');
+    imgContainer.classList.add('containerAbout_div--img');
 
     const imgModal = document.createElement('img');
     imgModal.src = `./assets/e-book.png`;
@@ -138,6 +176,13 @@ const openAbout = () => {
         main.classList.remove('modal-open')
     });
 };
+// ORGANIZA OS ELEMENTOS EM UMA CAMADA SUPERIOR QUANDO O BOTAO DE SOBRE MIM E ATIVADO DENTRO DO MENU NAV
+
+
+
+
+
+
 
 
 
@@ -161,7 +206,8 @@ buttonFilter.addEventListener ('click',() => {
         ico.classList.remove('fa-chevron-up');
         console.log('inicio')
     }
-})
+});
+// ANIMAÇÂO PARA A EXIBIÇÂO DO ICONE COM SETA AO CLICK DO SELECIONE
 
 
 
@@ -237,7 +283,13 @@ items.forEach(({ filename, book, fullNameBook, price, information, href }) => {
     main.appendChild(div);
 });
 
+
+
+
+
+
 const btnWhatsapp = document.querySelector('#whatsapp-btn');
 btnWhatsapp.addEventListener('click', () => {
     btnWhatsapp.href = 'https://w.app/2hepwu';
-})
+});
+// BOTAO DO WHATSAPP VOADOR 

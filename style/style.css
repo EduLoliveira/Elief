@@ -734,14 +734,13 @@
 }
 
 /* Estilos para o container do modal */
-.containerAbout-div {
+.containerAbout_div {
   height: 100vh;
   position: relative;
   z-index: 999;
   background: white;
 }
-
-.containerAbout--img {
+.containerAbout_div--img {
   position: fixed;
   top: 50%;
   z-index: 999;
@@ -756,7 +755,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
 }
-.containerAbout--img > img {
+.containerAbout_div--img > img {
   width: 40%;
   margin: 0 auto;
 }
@@ -776,8 +775,6 @@
   margin-top: 10px;
   border-radius: 5px;
 }
-
-/* Efeito de hover para o botão de fechar */
 .modal-close-btn:hover {
   background-color: #d32f2f;
 }
