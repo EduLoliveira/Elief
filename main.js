@@ -194,13 +194,18 @@ const ico = document.querySelector('#iconFilter');
 
 buttonFilter.addEventListener ('click',() => {
     if(buttonFilter.checked == true){
-        filter.style.top = '50%'
+        filter.style.top = '45%'
+        
+        setTimeout(() => {
+            filter.style.zIndex = 0;
+        }, 50);
         setTimeout(() => {
             ico.classList.remove('fa-chevron-down');
             ico.classList.add('fa-chevron-up');
             console.log('final')
         }, 350);
     } else {
+        filter.style.zIndex = -12;
         filter.style.top = '-100%'
         ico.classList.add('fa-chevron-down');
         ico.classList.remove('fa-chevron-up');
