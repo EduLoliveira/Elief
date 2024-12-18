@@ -173,14 +173,16 @@
 .menu-filtered > ul {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: #EEEEEE;
+  color: #000;
   width: auto;
   height: auto;
+  margin-top: -5%;
   padding: 5px 10px;
-  gap: 15px;
+  gap: 20px;
 }
 .menu-filtered > ul > li {
-  border-bottom: 0.4px solid #000;
+  border-bottom: 0.1px solid #000;
   list-style: none;
   text-align: center;
 }
@@ -282,6 +284,9 @@
   }
   .menu-filtered {
     right: 18%;
+  }
+  .menu-filtered > ul {
+    margin-top: 0.15rem;
   }
   .section_container {
     width: 100%;

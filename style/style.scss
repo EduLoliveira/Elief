@@ -129,6 +129,9 @@
 
     .menu-filtered {
         right: 18%;
+        & > ul {
+            margin-top: 0.15rem;
+        }
     }
 
     .section_container {

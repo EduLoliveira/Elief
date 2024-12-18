@@ -19,7 +19,8 @@ const items = [
         fullNameBook:'Notas Nilistas', 
         price: 69.90, 
         information: 'O nilismo, filosofia que questiona o sentido e o valor da vida, encontra na poesia um meio de expressão ideal. Por meio das palavras, o poeta nilista revela sua visão de mundo sombria e desesperançada, explorando temas como a insignificância da existência humana, a ausência de propósito e a inevitabilidade do fim. Essas poesias noturnas mergulham no obscuro e lúgubre, revelando a angústia e a solidão que permeiam a mente de um poeta insone. Eliel é um homem que nao se curva antes de qualquer autoritarismo, nem aceita nenhum princípio sem o olhar crítico de um pensador...' ,
-        href: 'https://w.app/vNuFgp'
+        href: 'https://w.app/vNuFgp',
+        sales: 100,
     
     },
     { 
@@ -28,7 +29,8 @@ const items = [
         price: 59.90, 
         fullNameBook:'Ano Zero', 
         information: 'Vinte anos após o grande mal que se estendeu sobre a Terra, sem qualquer controle, envolvendo pessoas, empresas e o fluxo de informações, a maioria da população não sobreviveu. Migraremos para as colônias interplanetárias ou permaneceremos numa terra decadente e dizimada? Como descrever o mundo reiniciado? O que é sobreviver após uma destruição? Alianças, confiança, ameaças, segurança, tudo esta abalado. O que é bom ou mau? O que pode mudar para sempre a percepção da realidade? Desfrutaremos de um mundo melhorado? Ou afundaremos ainda mais devido aos erros dos laboratórios bioquimicos clandestinos? Rastreamento e identificação por meio de implantes definirão quem esta curado? Novas normas de comportamento serão adotadas e, devido ao contágio, desenvolveremos máquinas interligadas, autômatas, superinteligentes e aptas a tomar decisões que podem afetar todos nós? Inteligências Artificiais atingirão a autoconsciência para moderar e assombrar o ciberespaço? Essas são as perguntas que chicoteiam nossa mente nos dias atuais. Este é o Ano Zero? Definitivamente SIM.' ,
-        href: 'https://w.app/L64ynW'
+        href: 'https://w.app/L64ynW',
+        sales: 2100,
     },
     { 
         filename: 'Uma_Poesia_Pra_Cada_Dia.jpg', 
@@ -36,7 +38,8 @@ const items = [
         fullNameBook:'Uma Poesia Pra Cada Dia', 
         price: 69.90, 
         information: 'UM DIA. Este pequeno intervalo de horas, do nascente ao poente, oferece a nós a chance de realizarmos o novo, de contemplarmos uma folha em branco, rica em possibilidades e com uma paleta inteira de cores para colorirmos. Para um ano, um novo dia pode não parecer muito, mas é uma chama de esperança que acende em nosso ser, que mantém nosso entusiasmo. É a celebração do hoje que chegou e de que amanhã outro dia virá. De que o ontem foi deixado irremediavelmente para trás e o agora, este exato momento, é tudo o que temos, tanto para agradecer, remediar, planejar e para agir. Neste compilado, você será presentado, a cada nova manhã, com uma poesia, escrita por autores advindos de todo o Brasil. Cada poesia terá sua peculiaridade, seu despertar debruçado sobre uma nova manhã. Uma poesia para cada dia....',
-        href: 'https://w.app/3ZfAuQ'
+        href: 'https://w.app/3ZfAuQ',
+        sales: 200,
     },
     { 
         filename: 'Mamae_Erotica.jpg', 
@@ -44,7 +47,8 @@ const items = [
         fullNameBook:'Mamãe Erótica', 
         price: 69.90, 
         information: '“Amar, prazer, defender, contituir. Ela deitava a cabeça no travesseiro toda noite e essas quatro palavras contruiam valores que frequentemente outros queriam destruir. Mamãe erótica. Essa era a forma que o mundo lhe via, como o olho que tudo vê, numa visão panorâmica de acontecimentos dissidentes dos amores e tragédias”....', 
-        href: 'https://w.app/D1MO6n'
+        href: 'https://w.app/D1MO6n',
+        sales: 2, 
     },
 ]
 
@@ -187,18 +191,22 @@ const openAbout = () => {
 
 
 
+
 // Efeito de Click para exibir option de filter
 const buttonFilter = document.querySelector('#checked');
 const filter = document.querySelector('.menu-filtered');
 const ico = document.querySelector('#iconFilter');
 
+
+// Evento do botão de filtro
 buttonFilter.addEventListener ('click',() => {
     if(buttonFilter.checked == true){
         filter.style.top = '45%'
-        
+        console.log('primeiro filter')
         setTimeout(() => {
             filter.style.zIndex = 0;
-        }, 50);
+            console.log('segundo filter')
+        }, 0);
         setTimeout(() => {
             ico.classList.remove('fa-chevron-down');
             ico.classList.add('fa-chevron-up');
@@ -216,7 +224,6 @@ buttonFilter.addEventListener ('click',() => {
 
 
 
-
 // Função para abrir o modal
 const openModal = (item) => {
     modalImg.src = `${directory}/${item.filename}`;
@@ -224,7 +231,7 @@ const openModal = (item) => {
     modalTitle.textContent = item.fullNameBook;
     modalDescription.textContent = item.information;
     modalBtn.href = item.href;
-
+    
     main.classList.add('modal-open')
     modal.classList.remove('hidden');
     modal.classList.add('visible');
@@ -240,54 +247,96 @@ modalClose.addEventListener('click', () => {
 
 
 // Criar os livros dinamicamente
-items.forEach(({ filename, book, fullNameBook, price, information, href }) => {
-    const div = document.createElement('div');
-    div.classList.add('main_container--div');
+// Função para renderizar os livros dinamicamente
+function renderItems(sortedItems) {
+    main.innerHTML = ''; // Limpa o container principal
+    sortedItems.forEach(({ filename, book, fullNameBook, price, information, href }) => {
+        const div = document.createElement('div');
+        div.classList.add('main_container--div');
+        
+        const img = document.createElement('img');
+        img.src = `${directory}/${filename}`;
+        img.alt = fullNameBook;
+        img.classList.add('main_container--div-img');
+        img.addEventListener('click', () => {
+            openModal({ filename, fullNameBook, information });
+        });
+        div.appendChild(img);
+        
+        const infoDiv = document.createElement('div');
+        infoDiv.classList.add('main_container--div-information');
+        
+        const p = document.createElement('p');
+        p.textContent = book;
+        
+        const small = document.createElement('small');
+        small.textContent = 'Por apenas';
+        
+        const span = document.createElement('span');
+        span.textContent = `R$${price.toFixed(2)}`;
+        
+        const link = document.createElement('a');
+        link.textContent = 'Saber Mais';
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            openModal({ filename, fullNameBook, information, href });
+        });
+    
+        infoDiv.appendChild(p);
+        infoDiv.appendChild(small);
+        infoDiv.appendChild(span);
+        infoDiv.appendChild(link);
+    
+        div.appendChild(infoDiv);
 
-    const img = document.createElement('img');
-    img.src = `${directory}/${filename}`;
-    img.alt = fullNameBook;
-    img.classList.add('main_container--div-img');
-    img.addEventListener('click', () => {
-        openModal({ filename, fullNameBook, information });
+        div.addEventListener('click', () => {
+            openModal({ filename, fullNameBook, information, href });
+        });
+
+        main.appendChild(div);
     });
-    div.appendChild(img);
+}
 
-    const infoDiv = document.createElement('div');
-    infoDiv.classList.add('main_container--div-information');
+// Adicionar evento para aplicar os filtros
+const filterMenu = document.querySelector('.menu-filtered > ul');
+if (filterMenu) {
+    filterMenu.addEventListener('click', (e) => {
+        const target = e.target;
+        
+        // Verifica se o clique foi em um <li> ou seu filho
+        if (target.tagName === 'LI' || target.closest('LI')) {
+            const filter = target.textContent.trim(); // Obtém o texto do filtro
+            let sortedItems;
+            
+            // Lógica de ordenação
+            switch (filter) {
+                case 'Mais vendidos':
+                    // Ordenar por número de vendas (propriedade `sales`)
+                    sortedItems = [...items].sort((a, b) => b.sales - a.sales);
+                    break;
+                case 'A - Z':
+                    // Ordenar alfabeticamente
+                    sortedItems = [...items].sort((a, b) => a.book.localeCompare(b.book));
+                    break;
+                case 'Z - A':
+                    // Ordenar alfabeticamente reverso
+                    sortedItems = [...items].sort((a, b) => b.book.localeCompare(a.book));
+                    break;
+                default:
+                    sortedItems = items;
+                }
 
-    const p = document.createElement('p');
-    p.textContent = book;
+            // Renderizar os itens ordenados
+            renderItems(sortedItems);
 
-    const small = document.createElement('small');
-    small.textContent = 'Por apenas';
-
-    const span = document.createElement('span');
-    span.textContent = `R$${price.toFixed(2)}`;
-
-    const link = document.createElement('a');
-    link.textContent = 'Saber Mais';
-    link.addEventListener('click', (e) => {
-        e.preventDefault(); 
-        openModal({ filename, fullNameBook, information, href});
+        }
     });
+} else {
+    console.error('Menu de filtro não encontrado. Verifique a classe ".menu-filtered > ul".');
+}
 
-    infoDiv.appendChild(p);
-    infoDiv.appendChild(small);
-    infoDiv.appendChild(span);
-    infoDiv.appendChild(link);
-
-    div.appendChild(infoDiv);
-
-    // Adiciona evento de clique para abrir o modal
-    div.addEventListener('click', () => {
-        openModal({ filename, fullNameBook, information, href});
-    });
-
-    // Adiciona o div principal ao container
-    main.appendChild(div);
-});
-
+// Renderizar os itens inicialmente
+renderItems(items);
 
 
 
