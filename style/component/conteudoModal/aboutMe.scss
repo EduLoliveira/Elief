@@ -2,7 +2,6 @@
 /* Classe para evitar o scroll quando o modal está aberto */
 .modal-open {
     overflow: hidden;
-    overflow-y: auto;
 }
 
 /* Estilos para o container do modal */
@@ -11,13 +10,14 @@
     position: relative;
     z-index: 999;
     background: white;
+    overflow: hidden;
     &--img {
         position: fixed;
         top: 50%;
         z-index: 999;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 50%; 
+        width: 75vw;
         overflow-y: auto;
         height: 85vh;
         display: flex;
