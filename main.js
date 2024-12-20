@@ -338,6 +338,6 @@ renderItems(items);
 
 const btnWhatsapp = document.querySelector('#whatsapp-btn');
 btnWhatsapp.addEventListener('click', () => {
-    btnWhatsapp.href = 'https://w.app/2hepwu';
+    btnWhatsapp.href = 'https://wa.me/5511979945931?text=Boa%20Tarde%2C%20%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*%20Nome%3A.%20_________%2C%20recentemente%20encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20procurava%20por%20livros.%20E%20acabei%20ficando%20bastante%20curioso%20sobre%20o%20trabalho%20de%20voc%C3%AAs%2C%20e%20gostaria%20de%20saber%20mais%20sobre!!%0APoderiam%20me%20contar%20um%20pouco%20mais%20sobre%20a%20inspira%C3%A7%C3%A3o%20para%20as%20obras%2C%20os%20temas%20tratados%20nos%20livros%20e%20o%20que%20os%20leitores%20podem%20esperar%20de%20cada%20um%20deles%3F%0A%0ADesde%20j%C3%A1%2C%20agrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%20e%20aguardo%20ansiosamente%20pela%20resposta!%0AAtenciosamente%2C%0A%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*';
 });
 // BOTAO DO WHATSAPP VOADOR 
