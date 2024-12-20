@@ -774,6 +774,7 @@
 /* Classe para evitar o scroll quando o modal está aberto */
 .modal-open {
   overflow: hidden;
+  overflow-y: auto;
 }
 
 /* Estilos para o container do modal */
@@ -789,7 +790,9 @@
   z-index: 999;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 50%;
+  overflow-y: auto;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -799,8 +802,18 @@
   transition: all 0.5s;
 }
 .containerAbout_div--img > img {
-  width: 40%;
+  width: auto;
+  height: 220px;
   margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  border-radius: 6px;
+}
+.containerAbout_div--img .containerAbout_div--p {
+  text-align: justify;
+  padding: 0 2%;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
 }
 
 /* Estilos para o botão de fechar do modal */
@@ -810,7 +823,7 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 5%;
   border-radius: 5px;
 }
 .modal-close-btn:hover {
