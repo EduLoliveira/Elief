@@ -674,11 +674,12 @@
     }
 }
 
-@media (min-width: 1064px) {
+
+@media (min-width: 764px) {
 
     .modal-content {
         &-close {
-            right: 35%; 
+            margin-left: 20%;
         }
     }
 }
