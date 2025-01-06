@@ -6,6 +6,52 @@
     background-color: $backgroundBody;
 }
 
+
+//------------------------------------------------------------------------
+
+
+.container_icon--whatsapp {
+    font-size: 32px;
+    position: fixed;
+    bottom: 1%;
+    left: 4%;
+    background-color: green;
+    border-radius: 100%;
+    text-align: center;
+    width: 38px;
+    height: auto;
+    & > a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.main_container.modal-open {
+    position: fixed;
+    overflow: hidden;
+}
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 620px) {
+    
+    .menu-bar--check ul > li > .fa-user {
+        left: 2%;
+    }
+    
+    .menu-bar--check ul > li > .fa-circle-nodes {
+        left: 1%;
+    }
+    
+    .menu-bar--check ul > li > .fa-phone-volume {
+        left: 1%;
+    }
+    
+    .menu-bar--check ul > li > .fa-arrow-right-from-bracket {
+        left: 2%;
+    }
+}
+
 // ----------------------------------------------
 // (҂⌣̀_⌣́)ᕤ
 @import '../style/component/cabecalho/header.scss';
@@ -254,7 +300,7 @@
 //
 //        MAIN_CONTAINER 
 //              & 
-//      MAIN_CONTAINER--DIV
+//      MAIN_CONTAINER--DIV (conteudo de exibição livros Disponiveis)
 //
 //  FILTER E LIVROS DISPONIVEIS
 
@@ -583,6 +629,8 @@
 
 
 
+
+
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ╥﹏╥
 @import '../style/component/conteudoBodyModal/modal.scss';
@@ -600,9 +648,6 @@
     .modal-content {
         width: 85%;
         height: 70%;
-        &-close {
-            right: 10%;  
-        }
         &-informs {
             font-weight: bold;
         }
@@ -613,34 +658,13 @@
 
     .modal-content {
         width: 290px;
-        &-close {
-            right: 15%; 
-            top: 22%;   
-        }
         &-informs {
             margin-top: 10%;
         }
     }
 }
 
-@media (min-width: 440px) {
-
-    .modal-content {
-        &-close {
-            right: 18%; 
-            top: 22%;   
-        }
-    }
-}
-
-
 @media (min-width: 510px) and (max-width: 590px) {
-
-    .modal-content {
-        &-close {
-            right: 23%; 
-        }
-    }
 
     .container_icon--whatsapp {
         font-size: 38px;
@@ -649,75 +673,6 @@
         left: 2%;
     }
 }
-
-@media (min-width: 591px) {
-
-    .modal-content {
-        &-close {
-            right: 23%; 
-        }
-    }
-}
-
-@media (min-width: 620px) {
-    
-    .modal-content {
-        &-close {
-            right: 24%;
-        }
-    }
-}
-
-@media (min-width: 690px) {
-    
-    .modal-content {
-        &-close {
-            right: 26%;
-        }
-    }
-}
-
-
-@media (min-width: 739px) {
-    .modal-content {
-        &-close {
-            right: 28%; 
-        }
-    }
-}
-
-
-@media (min-width: 789px) {
-    .modal-content {
-        &-close {
-            right: 30%; 
-            top: 23%;
-        }
-    }
-}
-
-@media (min-width: 869px) {
-    .modal-content {
-        &-close {
-            right: 32%;
-        }
-    }
-}
-
-@media (min-width: 899px) {
-    .modal-content {
-        &-close {
-            right: 34%;
-        }
-    }
-
-    .container_icon--whatsapp {
-        font-size: 54px;
-        bottom: 2%;
-        width: 56px;
-    }
-}
-
 
 @media (min-width: 1064px) {
 
@@ -728,57 +683,16 @@
     }
 }
 
-@media (min-width: 1324px) {
-    .modal-content {
-        &-close {
-            right: 38%; 
-        }
+
+@media (min-width: 899px) {
+
+    .container_icon--whatsapp {
+        font-size: 54px;
+        bottom: 2%;
+        width: 56px;
     }
 }
 
 
 
-//------------------------------------------------------------------------
 
-
-.container_icon--whatsapp {
-    font-size: 32px;
-    position: fixed;
-    bottom: 1%;
-    left: 4%;
-    background-color: green;
-    border-radius: 100%;
-    text-align: center;
-    width: 38px;
-    height: auto;
-    & > a {
-        text-decoration: none;
-        color: $white;
-    }
-}
-
-.main_container.modal-open {
-    position: fixed;
-    overflow: hidden;
-}
-
-
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@media (min-width: 620px) {
-    
-    .menu-bar--check ul > li > .fa-user {
-        left: 2%;
-    }
-    
-    .menu-bar--check ul > li > .fa-circle-nodes {
-        left: 1%;
-    }
-    
-    .menu-bar--check ul > li > .fa-phone-volume {
-        left: 1%;
-    }
-    
-    .menu-bar--check ul > li > .fa-arrow-right-from-bracket {
-        left: 2%;
-    }
-}
