@@ -320,11 +320,11 @@ if (filterMenu) {
         if (target.tagName === 'LI' || target.closest('LI')) {
             const filter = target.textContent.trim(); // Obtém o texto do filtro
             let sortedItems;
-
+            
             // Lógica de ordenação
             switch (filter) {
                 case 'Mais vendidos':
-                    // Ordenar por número de vendas (propriedade `sales`)
+                    // Ordenar por número de vendas (propriedade sales)
                     sortedItems = [...items].sort((a, b) => b.sales - a.sales);
                     break;
                 case 'A - Z':
@@ -335,27 +335,18 @@ if (filterMenu) {
                     // Ordenar alfabeticamente reverso
                     sortedItems = [...items].sort((a, b) => b.book.localeCompare(a.book));
                     break;
-                case 'Menor preço':
-                    // Ordenar por preço crescente
-                    sortedItems = [...items].sort((a, b) => a.price - b.price);
-                    break;
-                case 'Maior preço':
-                    // Ordenar por preço decrescente
-                    sortedItems = [...items].sort((a, b) => b.price - a.price);
-                    break;
                 default:
                     sortedItems = items;
-            }
+                }
 
             // Renderizar os itens ordenados
             renderItems(sortedItems);
+
         }
     });
 } else {
     console.error('Menu de filtro não encontrado. Verifique a classe ".menu-filtered > ul".');
 }
-
-
 // Renderizar os itens inicialmente
 renderItems(items);
 
