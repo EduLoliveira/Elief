@@ -15,7 +15,7 @@ const directory = './assets/images';
 const items = [
     { 
         filename: 'RevolutionIA.jpeg', 
-        book: 'A revolução dos...', 
+        book: 'A revolução d...', 
         fullNameBook: 'A Revolução dos Algoritmos: IA Além da Automação', 
         price: 119.00, 
         information: 'Este livro explora como a inteligência artificial está transformando setores inteiros, indo além da automação básica para alcançar a tomada de decisões estratégicas e criativas. Com exemplos detalhados, o autor aborda tópicos como aprendizado por reforço, redes neurais generativas e ética na IA. Uma leitura essencial para quem quer entender o impacto prático e filosófico da IA em um mundo orientado por dados....' ,
@@ -25,7 +25,7 @@ const items = [
     },
     { 
         filename: 'AnaliseAvançada.png', 
-        book: 'Análise Avançad...', 
+        book: 'Análise Avan...', 
         price: 39.90, 
         fullNameBook:'Análise Avançada para Decisões Estratégicas', 
         information: 'Focado em desenvolvedores e analistas de dados experientes, este livro ensina como transformar grandes volumes de dados em narrativas acionáveis. Aborda ferramentas avançadas, como Python, R e Power BI, além de técnicas de visualização de dados e modelagem preditiva. Inclui estudos de caso de empresas que revolucionaram seus mercados com análises orientadas por storytelling.' ,
@@ -34,7 +34,7 @@ const items = [
     },
     { 
         filename: 'uxUi.png', 
-        book: 'Interfaces Inteligen...', 
+        book: 'Interfaces Intelige...', 
         fullNameBook:'Interfaces Inteligentes: UX e IA em Harmonia', 
         price: 69.90, 
         information: 'Uma abordagem única que une inteligência artificial e design de experiência do usuário (UX). O autor demonstra como criar interfaces intuitivas que se adaptam ao comportamento do usuário, utilizando aprendizado de máquina para personalizar interações. Um guia prático para integrar IA de forma estratégica em aplicações modernas.....',
@@ -42,7 +42,7 @@ const items = [
         sales: 200,
     },
     { 
-        filename: 'Front-End.png', 
+        filename: 'FrontEnd.png', 
         book: 'Front-End...', 
         fullNameBook:'Front-End Avançado para o Mundo Real', 
         price: 69.90, 
@@ -51,8 +51,8 @@ const items = [
         sales: 22, 
     },
     {
-        filename: 'ArquiteturaInteligente.jpg',
-        book: 'Arquitetura Int...',
+        filename: 'arquiteturaInteligente.jpg',
+        book: 'Arquitetura Intel...',
         fullNameBook: 'Arquiteturas Dinâmicas: Construindo Aplicações Escaláveis e Inteligentes',
         price: 29.99,
         information: 'Este livro explora como arquitetar sistemas modernos que suportem alta escalabilidade e integração de IA. Aborda microservices, arquitetura serverless, e uso estratégico de plataformas na nuvem como AWS e Azure. Ideal para engenheiros de software que desejam construir soluções robustas e preparadas para o futuro.',
