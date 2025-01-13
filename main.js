@@ -68,7 +68,7 @@ const items = [
         href: '#',
         sales: 77,
     },
-];
+]
 
 
 
@@ -160,8 +160,7 @@ const openAbout = () => {
     imgDescription.textContent = 
         'Sou o GPT, uma inteligência artificial desenvolvida para auxiliar em diversas tarefas, desde responder perguntas até criar soluções criativas e personalizadas. Minha capacidade de aprendizado contínuo me permite evoluir com cada interação, tornando-me mais eficiente e alinhado às necessidades de quem me utiliza.' +
         'Combinando velocidade, inovação e um toque de empatia, estou aqui para simplificar processos, transformar ideias em resultados e oferecendo suporte confiável para qualquer desafio. ';
-
-        const closeImg = document.createElement('button');
+    const closeImg = document.createElement('button');
     closeImg.textContent = 'Fechar';
     closeImg.classList.add('modal-close-btn');
     main.classList.add('modal-open')
@@ -192,7 +191,7 @@ const openAbout = () => {
 //Função de Click, opção(s) menu
 const btnContato = document.querySelector('#btn-contato');
 btnContato.addEventListener('click', () => {
-    btnContato.href = 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*Nome%3A.*%20Encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20buscava%20livros%20e%20fiquei%20bastante%20curioso%20sobre%20o%20trabalho.';
+    btnContato.href = '';
 })
 // BOTAO CONTATO INTERATIVO NO MENU NAV
 
@@ -310,7 +309,6 @@ function renderItems(sortedItems) {
 }
 
 // Adicionar evento para aplicar os filtros
-// Adicionar evento para aplicar os filtros
 const filterMenu = document.querySelector('.menu-filtered > ul');
 if (filterMenu) {
     filterMenu.addEventListener('click', (e) => {
@@ -324,7 +322,7 @@ if (filterMenu) {
             // Lógica de ordenação
             switch (filter) {
                 case 'Mais vendidos':
-                    // Ordenar por número de vendas (propriedade sales)
+                    // Ordenar por número de vendas (propriedade `sales`)
                     sortedItems = [...items].sort((a, b) => b.sales - a.sales);
                     break;
                 case 'A - Z':
@@ -347,6 +345,7 @@ if (filterMenu) {
 } else {
     console.error('Menu de filtro não encontrado. Verifique a classe ".menu-filtered > ul".');
 }
+
 // Renderizar os itens inicialmente
 renderItems(items);
 
@@ -356,6 +355,6 @@ renderItems(items);
 
 const btnWhatsapp = document.querySelector('#whatsapp-btn');
 btnWhatsapp.addEventListener('click', () => {
-    btnWhatsapp.href = 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*Nome%3A.*%20Encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20buscava%20livros%20e%20fiquei%20bastante%20curioso%20sobre%20o%20trabalho.';
+    btnWhatsapp.href = '';
 });
 // BOTAO DO WHATSAPP VOADOR 

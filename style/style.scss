@@ -339,7 +339,6 @@
 
 @media (min-width: 310px) and (max-width: 350px) {
 
-
     .main_container--div {
         width: 120px;
         margin-left: 2%;
@@ -374,7 +373,7 @@
 
 @media (min-width: 350px) and (max-width: 374px){
 
-
+    
     .main_container--div {
         width: 140px;
         margin-left: 0;
@@ -389,8 +388,9 @@
     }
 }
 
-@media (min-width: 376px) and (max-width: 419px){
+@media (min-width: 375px) and (max-width: 419px){
 
+    
 
     .main_container--div {
         max-width: 146px
@@ -398,13 +398,13 @@
 
     .main_container--div-information > p {
         font-size: 17px;
+        letter-spacing: 0px;
     }
 }
 
 
 @media (min-width: 420px){
-
-
+    
 
     .main_container--div {
         margin-left: 5%;
@@ -433,7 +433,6 @@
 
     .main_container {
         grid-auto-rows: 42%;
-        gap: 2% 0%;
     }
 
     .main_container--div {
@@ -467,7 +466,6 @@
     
     .main_container {
         grid-auto-rows: 380px;
-        gap: 2% 0%;
     }
 
     .main_container--div {
