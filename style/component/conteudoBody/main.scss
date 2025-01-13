@@ -1,7 +1,9 @@
 @import '../abstract/variaveis.scss';
 // style header
 //  BTNS e cabecalho
-
+body {
+    background-color: $backgroundContainerMain;
+}
 // CONTEUDO MAIN ONDE O CONTEUDO PRINCIPAL DA PAGINA SERA EXIBIDA 
 .main_container {
     position: absolute;

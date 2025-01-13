@@ -61,7 +61,7 @@ const items = [
     },
     {
         filename: 'BoaPratica.jpg',
-        book: 'Códigos Consc...',
+        book: 'Códigos...',
         fullNameBook: 'Códigos Conscientes: O Futuro Ético da Programação',
         price: 19.99,
         information: 'Este livro convida os desenvolvedores a refletirem sobre o impacto ético do código que criam. Com estudos de IA tendenciosa, privacidade de dados e impacto social do software, a obra desafia profissionais a pensarem além da lógica e do desempenho técnico, propondo uma abordagem ética e inclusiva no desenvolvimento de tecnologias.',
@@ -310,6 +310,7 @@ function renderItems(sortedItems) {
 }
 
 // Adicionar evento para aplicar os filtros
+// Adicionar evento para aplicar os filtros
 const filterMenu = document.querySelector('.menu-filtered > ul');
 if (filterMenu) {
     filterMenu.addEventListener('click', (e) => {
@@ -319,7 +320,7 @@ if (filterMenu) {
         if (target.tagName === 'LI' || target.closest('LI')) {
             const filter = target.textContent.trim(); // Obtém o texto do filtro
             let sortedItems;
-            
+
             // Lógica de ordenação
             switch (filter) {
                 case 'Mais vendidos':
@@ -334,18 +335,26 @@ if (filterMenu) {
                     // Ordenar alfabeticamente reverso
                     sortedItems = [...items].sort((a, b) => b.book.localeCompare(a.book));
                     break;
+                case 'Menor preço':
+                    // Ordenar por preço crescente
+                    sortedItems = [...items].sort((a, b) => a.price - b.price);
+                    break;
+                case 'Maior preço':
+                    // Ordenar por preço decrescente
+                    sortedItems = [...items].sort((a, b) => b.price - a.price);
+                    break;
                 default:
                     sortedItems = items;
-                }
+            }
 
             // Renderizar os itens ordenados
             renderItems(sortedItems);
-
         }
     });
 } else {
     console.error('Menu de filtro não encontrado. Verifique a classe ".menu-filtered > ul".');
 }
+
 
 // Renderizar os itens inicialmente
 renderItems(items);
