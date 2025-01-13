@@ -14,43 +14,61 @@ const main = document.querySelector('.main_container');
 const directory = './assets/images';
 const items = [
     { 
-        filename: 'Notas_Nilistas.jpg', 
-        book: 'Notas Nilis...', 
-        fullNameBook:'Notas Nilistas', 
-        price: 69.90, 
-        information: 'O nilismo, filosofia que questiona o sentido e o valor da vida, encontra na poesia um meio de expressão ideal. Por meio das palavras, o poeta nilista revela sua visão de mundo sombria e desesperançada, explorando temas como a insignificância da existência humana, a ausência de propósito e a inevitabilidade do fim. Essas poesias noturnas mergulham no obscuro e lúgubre, revelando a angústia e a solidão que permeiam a mente de um poeta insone. Eliel é um homem que nao se curva antes de qualquer autoritarismo, nem aceita nenhum princípio sem o olhar crítico de um pensador...' ,
-        href: 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20%26%20Willian%20Sena%2C%0A%0AEu%20sou%20a(o)%20*Nome%3A.________%20%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%2C%20pois%20gostaria%20de%20dar%20continuidade%20a%20compra%20referente%20ao%20Livro%3A.%20Notas%20Nilistas..%0A%0ASegue%20meus%20dados%20para%20continuidade%20e%20finaliza%C3%A7%C3%A3o%20%20da(o)%20compra%2Fenvio%3A%0A%0A*%20Nome%20completo%3A._______%0A*%20Endere%C3%A7o%3A.__________%0A*%20CEP%3A%20._______-__%0AAgrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%2C%20fico%20no%20aguardo%20de%20um%20retorno.%20%0A(A%20mensagem%20precisa%20ter%20os%20dados%20preenchidos%20para%20continuarmos%20com%20a%20finaliza%C3%A7%C3%A3o%20da%20compra)%0A%0AAtenciosamente%2C%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*',
+        filename: 'RevolutionIA.jpeg', 
+        book: 'A revolução dos...', 
+        fullNameBook: 'A Revolução dos Algoritmos: IA Além da Automação', 
+        price: 119.00, 
+        information: 'Este livro explora como a inteligência artificial está transformando setores inteiros, indo além da automação básica para alcançar a tomada de decisões estratégicas e criativas. Com exemplos detalhados, o autor aborda tópicos como aprendizado por reforço, redes neurais generativas e ética na IA. Uma leitura essencial para quem quer entender o impacto prático e filosófico da IA em um mundo orientado por dados....' ,
+        href: '#',
         sales: 100,
     
     },
     { 
-        filename: 'Ano_Zero.jpg', 
-        book: 'Ano Zero', 
-        price: 59.90, 
-        fullNameBook:'Ano Zero', 
-        information: 'Vinte anos após o grande mal que se estendeu sobre a Terra, sem qualquer controle, envolvendo pessoas, empresas e o fluxo de informações, a maioria da população não sobreviveu. Migraremos para as colônias interplanetárias ou permaneceremos numa terra decadente e dizimada? Como descrever o mundo reiniciado? O que é sobreviver após uma destruição? Alianças, confiança, ameaças, segurança, tudo esta abalado. O que é bom ou mau? O que pode mudar para sempre a percepção da realidade? Desfrutaremos de um mundo melhorado? Ou afundaremos ainda mais devido aos erros dos laboratórios bioquimicos clandestinos? Rastreamento e identificação por meio de implantes definirão quem esta curado? Novas normas de comportamento serão adotadas e, devido ao contágio, desenvolveremos máquinas interligadas, autômatas, superinteligentes e aptas a tomar decisões que podem afetar todos nós? Inteligências Artificiais atingirão a autoconsciência para moderar e assombrar o ciberespaço? Essas são as perguntas que chicoteiam nossa mente nos dias atuais. Este é o Ano Zero? Definitivamente SIM.' ,
-        href: 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20%26%20Willian%20Sena%2C%0A%0AEu%20sou%20a(o)%20*Nome%3A.________%20%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%2C%20pois%20gostaria%20de%20dar%20continuidade%20a%20compra%20referente%20ao%20Livro%3A.%20Ano%20Zero..%0A%0ASegue%20meus%20dados%20para%20continuidade%20e%20finaliza%C3%A7%C3%A3o%20%20da(o)%20compra%2Fenvio%3A%0A%0A*%20Nome%20completo%3A._______%0A*%20Endere%C3%A7o%3A.__________%0A*%20CEP%3A%20._______-__%0AAgrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%2C%20fico%20no%20aguardo%20de%20um%20retorno.%20%0A(A%20mensagem%20precisa%20ter%20os%20dados%20preenchidos%20para%20continuarmos%20com%20a%20finaliza%C3%A7%C3%A3o%20da%20compra)%0A%0AAtenciosamente%2C%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*',
-        sales: 2100,
+        filename: 'AnaliseAvançada.png', 
+        book: 'Análise Avançad...', 
+        price: 39.90, 
+        fullNameBook:'Análise Avançada para Decisões Estratégicas', 
+        information: 'Focado em desenvolvedores e analistas de dados experientes, este livro ensina como transformar grandes volumes de dados em narrativas acionáveis. Aborda ferramentas avançadas, como Python, R e Power BI, além de técnicas de visualização de dados e modelagem preditiva. Inclui estudos de caso de empresas que revolucionaram seus mercados com análises orientadas por storytelling.' ,
+        href: '#',
+        sales: 216,
     },
     { 
-        filename: 'Uma_Poesia_Pra_Cada_Dia.jpg', 
-        book: 'Uma poesia...', 
-        fullNameBook:'Uma Poesia Pra Cada Dia', 
+        filename: 'uxUi.png', 
+        book: 'Interfaces Inteligen...', 
+        fullNameBook:'Interfaces Inteligentes: UX e IA em Harmonia', 
         price: 69.90, 
-        information: 'UM DIA. Este pequeno intervalo de horas, do nascente ao poente, oferece a nós a chance de realizarmos o novo, de contemplarmos uma folha em branco, rica em possibilidades e com uma paleta inteira de cores para colorirmos. Para um ano, um novo dia pode não parecer muito, mas é uma chama de esperança que acende em nosso ser, que mantém nosso entusiasmo. É a celebração do hoje que chegou e de que amanhã outro dia virá. De que o ontem foi deixado irremediavelmente para trás e o agora, este exato momento, é tudo o que temos, tanto para agradecer, remediar, planejar e para agir. Neste compilado, você será presentado, a cada nova manhã, com uma poesia, escrita por autores advindos de todo o Brasil. Cada poesia terá sua peculiaridade, seu despertar debruçado sobre uma nova manhã. Uma poesia para cada dia....',
-        href: 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20%26%20Willian%20Sena%2C%0A%0AEu%20sou%20a(o)%20*Nome%3A.________%20%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%2C%20pois%20gostaria%20de%20dar%20continuidade%20a%20compra%20referente%20ao%20Livro%3A.%20Uma%20Poesia%20Pra%20Cada%20Dia..%0A%0ASegue%20meus%20dados%20para%20continuidade%20e%20finaliza%C3%A7%C3%A3o%20%20da(o)%20compra%2Fenvio%3A%0A%0A*%20Nome%20completo%3A._______%0A*%20Endere%C3%A7o%3A.__________%0A*%20CEP%3A%20._______-__%0AAgrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%2C%20fico%20no%20aguardo%20de%20um%20retorno.%20%0A(A%20mensagem%20precisa%20ter%20os%20dados%20preenchidos%20para%20continuarmos%20com%20a%20finaliza%C3%A7%C3%A3o%20da%20compra)%0A%0AAtenciosamente%2C%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*',
+        information: 'Uma abordagem única que une inteligência artificial e design de experiência do usuário (UX). O autor demonstra como criar interfaces intuitivas que se adaptam ao comportamento do usuário, utilizando aprendizado de máquina para personalizar interações. Um guia prático para integrar IA de forma estratégica em aplicações modernas.....',
+        href: '#',
         sales: 200,
     },
     { 
-        filename: 'Mamae_Erotica.jpg', 
-        book: 'Mamãe eró...', 
-        fullNameBook:'Mamãe Erótica', 
+        filename: 'Front-End.png', 
+        book: 'Front-End...', 
+        fullNameBook:'Front-End Avançado para o Mundo Real', 
         price: 69.90, 
-        information: '“Amar, prazer, defender, contituir. Ela deitava a cabeça no travesseiro toda noite e essas quatro palavras contruiam valores que frequentemente outros queriam destruir. Mamãe erótica. Essa era a forma que o mundo lhe via, como o olho que tudo vê, numa visão panorâmica de acontecimentos dissidentes dos amores e tragédias”....', 
-        href: 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20%26%20Willian%20Sena%2C%0A%0AEu%20sou%20a(o)%20*Nome%3A.________%20%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site%2C%20pois%20gostaria%20de%20dar%20continuidade%20a%20compra%20referente%20ao%20Livro%3A.%20Mam%C3%A3e%20Er%C3%B3tica..%0A%0ASegue%20meus%20dados%20para%20continuidade%20e%20finaliza%C3%A7%C3%A3o%20%20da(o)%20compra%2Fenvio%3A%0A%0A*%20Nome%20completo%3A._______%0A*%20Endere%C3%A7o%3A.__________%0A*%20CEP%3A%20._______-__%0AAgrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%2C%20fico%20no%20aguardo%20de%20um%20retorno.%20%0A(A%20mensagem%20precisa%20ter%20os%20dados%20preenchidos%20para%20continuarmos%20com%20a%20finaliza%C3%A7%C3%A3o%20da%20compra)%0A%0AAtenciosamente%2C%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*',
-        sales: 2, 
+        information: 'Uma obra voltada para desenvolvedores que desejam dominar o desenvolvimento front-end com foco em performance e experiência do usuário. O autor mergulha profundamente em frameworks modernos como React, Vue.js e Svelte, além de otimização de código para SEO e práticas acessíveis. Um capítulo especial aborda a integração eficiente com APIs e back-end...', 
+        href: '#',
+        sales: 22, 
     },
-]
+    {
+        filename: 'ArquiteturaInteligente.jpg',
+        book: 'Arquitetura Int...',
+        fullNameBook: 'Arquiteturas Dinâmicas: Construindo Aplicações Escaláveis e Inteligentes',
+        price: 29.99,
+        information: 'Este livro explora como arquitetar sistemas modernos que suportem alta escalabilidade e integração de IA. Aborda microservices, arquitetura serverless, e uso estratégico de plataformas na nuvem como AWS e Azure. Ideal para engenheiros de software que desejam construir soluções robustas e preparadas para o futuro.',
+        href: '#',
+        sales: 42,
+    },
+    {
+        filename: 'BoaPratica.jpg',
+        book: 'Códigos Consc...',
+        fullNameBook: 'Códigos Conscientes: O Futuro Ético da Programação',
+        price: 19.99,
+        information: 'Este livro convida os desenvolvedores a refletirem sobre o impacto ético do código que criam. Com estudos de IA tendenciosa, privacidade de dados e impacto social do software, a obra desafia profissionais a pensarem além da lógica e do desempenho técnico, propondo uma abordagem ética e inclusiva no desenvolvimento de tecnologias.',
+        href: '#',
+        sales: 77,
+    },
+];
 
 
 
@@ -134,14 +152,14 @@ const openAbout = () => {
     imgContainer.classList.add('containerAbout_div--img');
     
     const imgModal = document.createElement('img');
-    imgModal.src = `./assets/eliel.png`;
+    imgModal.src = `./assets/chatGpt.jpg`;
     imgModal.alt = 'Sobre mim';
     
     const imgDescription = document.createElement('p');
     imgDescription.classList.add('containerAbout_div--p');
     imgDescription.textContent = 
-        'À medida que avançamos pela vida, inevitavelmente enfrentamos desafios que nos testam, tanto em nossas habilidades quanto em nossa resiliência emocional. Cada obstáculo, por menor que pareça, possui um significado profundo no desenvolvimento do nosso caráter e na construção da pessoa que nos tornamos. Esses desafios, muitas vezes, aparecem sem aviso prévio, testando-nos em momentos em que menos esperamos ou estamos menos preparados. No entanto, é justamente nesses instantes que encontramos a oportunidade de olhar para dentro de nós mesmos e questionar as bases sobre as quais estamos construindo a nossa vida.' + 
-        ' Crescer não é um processo linear. Existem dias em que tudo flui, em que sentimos que estamos em harmonia com o universo, mas também há aqueles em que o progresso parece inexistente e cada passo adiante vem acompanhado de duas quedas para trás. Nessas horas, é natural duvidar de nossa própria força e questionar a direção que estamos tomando. Mas a verdade é que, frequentemente, é no caos e na confusão que as transformações mais profundas acontecem.  '
+        'Sou o GPT, uma inteligência artificial desenvolvida para auxiliar em diversas tarefas, desde responder perguntas até criar soluções criativas e personalizadas. Minha capacidade de aprendizado contínuo me permite evoluir com cada interação, tornando-me mais eficiente e alinhado às necessidades de quem me utiliza.' +
+        'Combinando velocidade, inovação e um toque de empatia, estou aqui para simplificar processos, transformar ideias em resultados e oferecendo suporte confiável para qualquer desafio. ';
 
         const closeImg = document.createElement('button');
     closeImg.textContent = 'Fechar';
@@ -174,7 +192,7 @@ const openAbout = () => {
 //Função de Click, opção(s) menu
 const btnContato = document.querySelector('#btn-contato');
 btnContato.addEventListener('click', () => {
-    btnContato.href = 'https://wa.me/5511979945931?text=Boa%20Tarde%2C%20%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*%20Nome%3A.%20_________%2C%20recentemente%20encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20procurava%20por%20livros.%20E%20acabei%20ficando%20bastante%20curioso%20sobre%20o%20trabalho%20de%20voc%C3%AAs%2C%20e%20gostaria%20de%20saber%20mais%20sobre!!%0APoderiam%20me%20contar%20um%20pouco%20mais%20sobre%20a%20inspira%C3%A7%C3%A3o%20para%20as%20obras%2C%20os%20temas%20tratados%20nos%20livros%20e%20o%20que%20os%20leitores%20podem%20esperar%20de%20cada%20um%20deles%3F%0A%0ADesde%20j%C3%A1%2C%20agrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%20e%20aguardo%20ansiosamente%20pela%20resposta!%0AAtenciosamente%2C%0A%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*';
+    btnContato.href = 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*Nome%3A.*%20Encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20buscava%20livros%20e%20fiquei%20bastante%20curioso%20sobre%20o%20trabalho.';
 })
 // BOTAO CONTATO INTERATIVO NO MENU NAV
 
@@ -338,6 +356,6 @@ renderItems(items);
 
 const btnWhatsapp = document.querySelector('#whatsapp-btn');
 btnWhatsapp.addEventListener('click', () => {
-    btnWhatsapp.href = 'https://wa.me/5511979945931?text=Boa%20Tarde%2C%20%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*%20Nome%3A.%20_________%2C%20recentemente%20encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20procurava%20por%20livros.%20E%20acabei%20ficando%20bastante%20curioso%20sobre%20o%20trabalho%20de%20voc%C3%AAs%2C%20e%20gostaria%20de%20saber%20mais%20sobre!!%0APoderiam%20me%20contar%20um%20pouco%20mais%20sobre%20a%20inspira%C3%A7%C3%A3o%20para%20as%20obras%2C%20os%20temas%20tratados%20nos%20livros%20e%20o%20que%20os%20leitores%20podem%20esperar%20de%20cada%20um%20deles%3F%0A%0ADesde%20j%C3%A1%2C%20agrade%C3%A7o%20pela%20aten%C3%A7%C3%A3o%20e%20aguardo%20ansiosamente%20pela%20resposta!%0AAtenciosamente%2C%0A%0A*%20PREENCHER%20DADOS%20ACIMA%20!!%20*';
+    btnWhatsapp.href = 'https://wa.me/5511979945931?text=Boa%20tarde%2C%0AEliel%20Carvalho%20Ferreira%20e%20Willian%20Sena%2C%0A%0AMeu%20nome%20%C3%A9%20*Nome%3A.*%20Encontrei%20o%20site%20de%20voc%C3%AAs%20enquanto%20buscava%20livros%20e%20fiquei%20bastante%20curioso%20sobre%20o%20trabalho.';
 });
 // BOTAO DO WHATSAPP VOADOR 
