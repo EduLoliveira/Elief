@@ -15,7 +15,7 @@ const directory = './assets/images';
 const items = [
     { 
         filename: 'RevolutionIA.jpeg', 
-        book: 'A revolução d...', 
+        book: 'A revolução...', 
         fullNameBook: 'A Revolução dos Algoritmos: IA Além da Automação', 
         price: 119.00, 
         information: 'Este livro explora como a inteligência artificial está transformando setores inteiros, indo além da automação básica para alcançar a tomada de decisões estratégicas e criativas. Com exemplos detalhados, o autor aborda tópicos como aprendizado por reforço, redes neurais generativas e ética na IA. Uma leitura essencial para quem quer entender o impacto prático e filosófico da IA em um mundo orientado por dados....' ,
@@ -34,7 +34,7 @@ const items = [
     },
     { 
         filename: 'uxUi.png', 
-        book: 'Interfaces Intelige...', 
+        book: 'Interfaces ...', 
         fullNameBook:'Interfaces Inteligentes: UX e IA em Harmonia', 
         price: 69.90, 
         information: 'Uma abordagem única que une inteligência artificial e design de experiência do usuário (UX). O autor demonstra como criar interfaces intuitivas que se adaptam ao comportamento do usuário, utilizando aprendizado de máquina para personalizar interações. Um guia prático para integrar IA de forma estratégica em aplicações modernas.....',
@@ -52,7 +52,7 @@ const items = [
     },
     {
         filename: 'arquiteturaInteligente.jpg',
-        book: 'Arquitetura Intel...',
+        book: 'Arquitetura...',
         fullNameBook: 'Arquiteturas Dinâmicas: Construindo Aplicações Escaláveis e Inteligentes',
         price: 29.99,
         information: 'Este livro explora como arquitetar sistemas modernos que suportem alta escalabilidade e integração de IA. Aborda microservices, arquitetura serverless, e uso estratégico de plataformas na nuvem como AWS e Azure. Ideal para engenheiros de software que desejam construir soluções robustas e preparadas para o futuro.',
